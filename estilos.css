@@ -332,6 +332,7 @@ section:nth-of-type(4){ animation-delay: 0.55s; }
 section:nth-of-type(5){ animation-delay: 0.7s; }
 
 
+
 section{
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
