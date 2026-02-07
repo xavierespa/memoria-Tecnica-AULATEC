@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AULATEC - Diseño Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="diseno">
+
+<div id="logros" class="logros-container"></div>
+
+<div class="container">
+
+<nav class="menu">
+    <a href="inicio.html">Inicio</a>
+    <a href="sistemas.html">Sistemas Operativos</a>
+    <a href="soporte.html">Soporte Técnico</a>
+    <a href="diseño.html">Diseño Web</a>
+    <a href="logros.html">Logros</a>
+</nav>
+ <section class="modulo-dw">
+<header>
+   
+    <h1>🎨 Diseño Web</h1>
+    <p>Creación de páginas web con HTML y CSS</p>
+</header>
+
+<main>
+
+<div id="mensaje" class="mensaje"></div>
+
+<!-- INTRO -->
+<section>
+    <h2>📘 ¿Qué es el Diseño Web?</h2>
+
+    <p>
+        El diseño web es el proceso de crear páginas web combinando
+        estructura, contenido y estilo para brindar una experiencia
+        visual clara y atractiva.
+    </p>
+
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBtOWzb0JrqXDblke7WX5sibTWdYCYsVZTYkkuP9fW5QxD8bbwe7w9RhCNgfM6SXCCYHxZfbxNn6JYvZP7SJ_K9JQyzfBdcR2TxsrlskhF8jLTBz8GKgof72oBo46pFuuaTXzvh7sXwQyn/s1600/css3-html5-e1383236383597.png"
+         class="imagen-modulo">
+</section>
+
+<section>
+    <h2>🎯 ¿Qué aprenderás en este módulo?</h2>
+    <ul>
+        <li>Estructura HTML</li>
+        <li>Estilos con CSS</li>
+        <li>Organización visual</li>
+        <li>Creación de páginas web</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🧠 Importancia del Diseño Web</h2>
+    <p>
+        Permite crear páginas claras, atractivas y funcionales,
+        facilitando la comunicación digital.
+    </p>
+</section>
+
+<!-- ================= SIMULACIONES ================= -->
+
+<section>
+    <h2>🧪 Simulación 1: Estructura HTML</h2>
+
+    <p><strong>¿Qué etiqueta crea un título principal?</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaCorrecta('diseno-1')">&lt;h1&gt;</button>
+        <button onclick="respuestaIncorrecta()">&lt;p&gt;</button>
+        <button onclick="respuestaIncorrecta()">&lt;div&gt;</button>
+    </div>
+</section>
+
+<section>
+    <h2>🧪 Simulación 2: Estilos CSS</h2>
+
+    <p><strong>¿Qué propiedad cambia el color del texto?</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaIncorrecta()">background-color</button>
+        <button onclick="respuestaCorrecta('diseno-2')">color</button>
+        <button onclick="respuestaIncorrecta()">font-size</button>
+    </div>
+</section>
+
+<section>
+    <h2>🧪 Simulación 3: Archivos Web</h2>
+
+    <p><strong>¿Qué archivo aplica estilos visuales?</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaIncorrecta()">script.js</button>
+        <button onclick="respuestaCorrecta('diseno-3')">estilos.css</button>
+        <button onclick="respuestaIncorrecta()">index.txt</button>
+    </div>
+</section>
+
+<!-- ================= PRUEBAS POR NIVEL ================= -->
+
+<section>
+    <h2>📝 Evaluaciones del módulo</h2>
+
+    <button onclick="cargarPrueba('diseno_basico')">
+        Prueba 1 - Nivel Básico
+    </button>
+
+    <button onclick="cargarPrueba('diseno_avanzado')">
+        Prueba 2 - Nivel Avanzado
+    </button>
+</section>
+
+<div id="preguntas"></div>
+
+<!-- ================= PUNTAJE ================= -->
+
+<section class="puntaje">
+    <h2>🎯 Puntaje del módulo</h2>
+
+    <p id="puntos">0 puntos</p>
+
+    <div class="barra">
+        <div id="progreso"></div>
+    </div>
+
+    <a href="inicio.html">
+        <button>⬅ Volver al inicio</button>
+    </a>
+</section>
+
+</main>
+</div>
+</section>
+<footer>
+    <p>📘 Proyecto de Grado – AULATEC</p>
+</footer>
+</section>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

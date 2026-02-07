@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AULATEC - Portal de Aprendizaje Técnico</title>
+<link rel="stylesheet" href="estilos.css">
+<link rel="audio" href="audiologro.ogg" type="audio/ogg">
+</head>
+
+<body class="inicio">
+
+<div id="logros" class="logros-container"></div>
+
+<div class="container">
+
+<nav class="menu">
+<a href="inicio.html">Inicio</a>
+<a href="sistemas.html">Sistemas Operativos</a>
+<a href="soporte.html">Soporte Técnico</a>
+<a href="diseño.html">Diseño Web</a>
+<a href="logros.html">Logros</a>
+</nav>
+
+<header class="hero">
+<h1>🚀 AULATEC</h1>
+<p>Portal de aprendizaje técnico interactivo</p>
+<span>Aprende – Practica – Progresa</span>
+</header>
+
+<main>
+
+<!-- INFORMACIÓN -->
+<section class="info">
+<h2>¿Qué es AULATEC?</h2>
+<p>
+AULATEC es un portal educativo digital diseñado para apoyar el aprendizaje
+técnico en el área informática mediante simulaciones interactivas.
+</p>
+</section>
+
+<section class="info">
+<h2>Objetivo del Proyecto</h2>
+<p>
+Fortalecer competencias técnicas mediante actividades prácticas y seguimiento del progreso.
+</p>
+</section>
+
+<section class="info">
+<h2>Beneficios del Estudiante</h2>
+<ul>
+<li>✔ Aprendizaje práctico</li>
+<li>✔ Seguimiento en tiempo real</li>
+<li>✔ Refuerzo técnico</li>
+<li>✔ Motivación con logros</li>
+</ul>
+</section>
+
+<!-- MODULOS -->
+<section>
+<h2>Módulos de Aprendizaje</h2>
+
+<div class="modulos">
+<a href="diseño.html" class="modulo diseño">🎨 Diseño Web</a>
+<a href="sistemas.html" class="modulo sistemas">💻 Sistemas Operativos</a>
+<a href="soporte.html" class="modulo soporte">🛠 Soporte Técnico</a>
+</div>
+
+</section>
+<section class="xp-container">
+
+<h2>⭐ Experiencia del Jugador</h2>
+
+<p id="nivelJugador">Nivel 1</p>
+
+<div class="barra-xp">
+<div id="barraXP"></div>
+</div>
+
+</section>
+
+<!-- PROGRESO -->
+<section class="puntaje">
+<h2>🎯 Progreso del Estudiante</h2>
+
+<p id="puntos">0 puntos</p>
+
+<button type="button" onclick="reiniciarProgreso()">
+    🔄 Reiniciar puntos
+</button>
+
+
+<div class="barra">
+<div id="progreso"></div>
+</div>
+</section>
+
+
+</main>
+</div>
+
+<footer>
+<p>📘 Proyecto de Grado – AULATEC 2026</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

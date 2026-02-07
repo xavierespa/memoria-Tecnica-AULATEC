@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AULATEC - Sistemas Operativos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="sistemas">
+<div class="container">
+
+<nav class="menu">
+    <a href="inicio.html">Inicio</a>
+    <a href="sistemas.html">Sistemas Operativos</a>
+    <a href="soporte.html">Soporte Técnico</a>
+    <a href="diseño.html">Diseño Web</a>
+    <a href="logros.html">Logros</a>
+</nav>
+<section class="modulo-sis">
+<header>
+    <h1>💻 Sistemas Operativos</h1>
+    <p>Diagnóstico básico y solución de problemas comunes</p>
+</header>
+
+<main>
+
+<div id="mensaje" class="mensaje"></div>
+
+<!-- INTRODUCCIÓN -->
+<section>
+    <h2>📘 ¿Qué es un Sistema Operativo?</h2>
+    <p>
+        Un sistema operativo es el software principal de una computadora.
+        Administra el hardware, ejecuta programas y permite la interacción
+        entre el usuario y el equipo.
+    </p>
+
+    <img src="https://examtimeassets.s3.amazonaws.com/uploads/media/image/35130327/desktop_bd4d833f-e68b-4fae-8fae-2f1be5f06489.png"
+         alt="Sistema Operativo"
+         class="imagen-modulo">
+</section>
+
+<section>
+    <h2>🎯 ¿Qué aprenderás en este módulo?</h2>
+    <ul>
+        <li>Identificar fallas comunes en sistemas operativos</li>
+        <li>Aplicar diagnósticos básicos</li>
+        <li>Seleccionar soluciones correctas</li>
+        <li>Desarrollar pensamiento lógico y técnico</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🛠️ Importancia del diagnóstico</h2>
+    <p>
+        Un diagnóstico correcto permite solucionar problemas sin causar
+        daños mayores al sistema.
+    </p>
+</section>
+
+<!-- ================= SIMULACIONES ================= -->
+
+<section>
+    <h2>🧪 Simulación 1: La computadora no enciende</h2>
+
+    <img src="https://www.hightecuador.com//images/productos/20c338b951d1c11074aec4d20954286185b499fe5c64d98154/PROD_2022-03-16_16-37-03.jpg"
+         alt="Fuente de poder"
+         class="imagen-modulo">
+
+    <p><strong>¿Cuál es la acción correcta?</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaIncorrecta()">Revisar el mouse</button>
+
+        <button onclick="respuestaCorrecta('sistema-1')">
+            Revisar la fuente de poder
+        </button>
+
+        <button onclick="respuestaIncorrecta()">Revisar el teclado</button>
+    </div>
+</section>
+
+<section>
+    <h2>🧪 Simulación 2: Windows no inicia</h2>
+
+    <img src="https://support.microsoft.com/images/es-es/21251686-4118-4fd0-a872-83e3bc5fc7b3"
+         alt="Reparación de inicio"
+         class="imagen-modulo">
+
+    <p><strong>Selecciona la mejor solución:</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaIncorrecta()">Formatear inmediatamente</button>
+
+        <button onclick="respuestaCorrecta('sistema-2')">
+            Usar reparación de inicio
+        </button>
+
+        <button onclick="respuestaIncorrecta()">Cambiar el mouse</button>
+    </div>
+</section>
+
+<section>
+    <h2>🧪 Simulación 3: La computadora está muy lenta</h2>
+
+    <img src="https://i.blogs.es/0726ed/inicio/450_1000.jpg"
+         alt="Administrador de tareas"
+         class="imagen-modulo">
+
+    <p><strong>¿Cuál es la acción correcta?</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaCorrecta('sistema-3')">
+            Revisar programas de inicio
+        </button>
+
+        <button onclick="respuestaIncorrecta()">Cambiar el monitor</button>
+        <button onclick="respuestaIncorrecta()">Cambiar el teclado</button>
+    </div>
+</section>
+
+<!-- ================= PRUEBAS POR NIVEL ================= -->
+
+<section>
+    <h2>📝 Evaluaciones del módulo</h2>
+
+    <button onclick="cargarPrueba('sistemas_basico')">
+        Prueba 1 - Nivel Básico
+    </button>
+
+    <button onclick="cargarPrueba('sistemas_avanzado')">
+        Prueba 2 - Nivel Avanzado
+    </button>
+
+</section>
+
+<div id="preguntas"></div>
+
+<!-- ================= PUNTAJE ================= -->
+
+<section class="puntaje">
+    <h2>🎯 Puntaje del módulo</h2>
+    <p id="puntos">0 puntos</p>
+
+    <div class="barra">
+        <div id="progreso"></div>
+    </div>
+
+    <a href="inicio.html">
+        <button>⬅ Volver al inicio</button>
+    </a>
+</section>
+
+</main>
+</div>
+
+<footer>
+    <p>📘 Proyecto de Grado – AULATEC</p>
+</footer>
+</section>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

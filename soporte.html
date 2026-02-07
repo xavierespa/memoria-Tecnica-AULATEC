@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AULATEC - Soporte Técnico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="soporte">
+<div class="container">
+
+<nav class="menu">
+    <a href="inicio.html">Inicio</a>
+    <a href="sistemas.html">Sistemas Operativos</a>
+    <a href="soporte.html">Soporte Técnico</a>
+    <a href="diseño.html">Diseño Web</a>
+    <a href="logros.html">Logros</a>
+</nav>
+<section class="modulo-st">
+<header>
+    <h1>🛠️ Soporte Técnico</h1>
+    <p>Diagnóstico y solución de problemas de hardware y software</p>
+</header>
+
+<main>
+
+<div id="mensaje" class="mensaje"></div>
+
+<!-- INTRODUCCIÓN -->
+<section>
+    <h2>📘 ¿Qué es el Soporte Técnico?</h2>
+    <p>
+        El soporte técnico es el área encargada de ayudar a los usuarios
+        a resolver problemas relacionados con el uso de computadoras,
+        dispositivos y programas informáticos.
+    </p>
+
+    <img src="https://blog.comparasoftware.com/wp-content/uploads/2020/07/Soporte-Tecnico-presencial-1.png"
+         alt="Soporte técnico"
+         class="imagen-modulo">
+</section>
+
+<!-- APRENDIZAJE -->
+<section>
+    <h2>🎯 ¿Qué aprenderás en este módulo?</h2>
+    <ul>
+        <li>Identificar problemas comunes de hardware</li>
+        <li>Detectar fallas de software</li>
+        <li>Aplicar soluciones básicas de soporte</li>
+        <li>Tomar decisiones correctas antes de actuar</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🧠 Importancia del Soporte Técnico</h2>
+    <p>
+        Un buen técnico analiza el problema antes de actuar. El soporte técnico
+        evita daños mayores, pérdida de información y gastos innecesarios.
+    </p>
+</section>
+
+<!-- ================= SIMULACIONES ================= -->
+
+<section>
+    <h2>🧪 Simulación 1: No hay conexión a internet</h2>
+
+    <img src="https://www.info-computer.com/modules/dbblog/views/img/post/791dd793f831502639028da53e85a3cc5062c7ca_herramientas-para-hacer-cables-de-red.jpg"
+         alt="Cable de red"
+         class="imagen-modulo">
+
+    <p><strong>Selecciona la primera acción correcta:</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaCorrecta('soporte-1')">
+            Revisar el cable de red o Wi-Fi
+        </button>
+
+        <button onclick="respuestaIncorrecta()">
+            Formatear la computadora
+        </button>
+
+        <button onclick="respuestaIncorrecta()">
+            Cambiar el monitor
+        </button>
+    </div>
+</section>
+
+<section>
+    <h2>🧪 Simulación 2: La impresora no imprime</h2>
+
+    <img src="https://tecnogame.ec/wp-content/uploads/2022/06/Impresora-Epson-Wifi-L3250.jpg"
+         alt="Impresora"
+         class="imagen-modulo">
+
+    <p><strong>¿Qué acción es la más adecuada?</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaIncorrecta()">Cambiar el teclado</button>
+
+        <button onclick="respuestaCorrecta('soporte-2')">
+            Revisar conexión y controladores
+        </button>
+
+        <button onclick="respuestaIncorrecta()">Apagar el monitor</button>
+    </div>
+</section>
+
+<section>
+    <h2>🧪 Simulación 3: La computadora se apaga sola</h2>
+
+    <img src="https://media.startech.com/cms/products/gallery_large/fan12025pwm.main.jpg"
+         alt="Ventilador PC"
+         class="imagen-modulo">
+
+    <p><strong>Selecciona la causa más probable:</strong></p>
+
+    <div class="opciones">
+        <button onclick="respuestaCorrecta('soporte-3')">
+            Sobrecalentamiento del sistema
+        </button>
+
+        <button onclick="respuestaIncorrecta()">Falla del mouse</button>
+        <button onclick="respuestaIncorrecta()">Problema del teclado</button>
+    </div>
+</section>
+
+<!-- ================= PRUEBAS POR NIVEL ================= -->
+
+<section>
+    <h2>📝 Evaluaciones del módulo</h2>
+
+    <button onclick="cargarPrueba('soporte_basico')">
+        Prueba 1 - Nivel Básico
+    </button>
+
+    <button onclick="cargarPrueba('soporte_avanzado')">
+        Prueba 2 - Nivel Avanzado
+    </button>
+
+</section>
+
+<div id="preguntas"></div>
+
+<!-- ================= PUNTAJE ================= -->
+
+<section class="puntaje">
+    <h2>🎯 Puntaje del módulo</h2>
+    <p id="puntos">0 puntos</p>
+
+    <div class="barra">
+        <div id="progreso"></div>
+    </div>
+
+    <a href="inicio.html">
+        <button>⬅ Volver al inicio</button>
+    </a>
+</section>
+
+</main>
+</div>
+
+<footer>
+    <p>📘 Proyecto de Grado – AULATEC</p>
+</footer>
+</section>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

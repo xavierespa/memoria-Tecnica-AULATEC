@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.menu {
+    background: #1e293b;
+    padding: 12px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+.opciones {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.opciones button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.opciones button:hover {
+    background: #1d4ed8;
+}
+
+.puntaje {
+    text-align: center;
+}
+
+.barra {
+    width: 100%;
+    background: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progreso {
+    height: 100%;
+    width: 0%;
+    background: #22c55e;
+    transition: width 0.5s;
+}
+
+img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+.mensaje {
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+.mensaje.mostrar {
+    display: block;
+}
+
+.mensaje.exito {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.mensaje.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.logros-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.logro {
+    background: gold;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: none;
+}
+
+.logro.mostrar {
+    display: block;
+}
+
+.medalla{
+opacity: 0.3;
+transform: scale(0.9);
+transition: 0.3s;
+}
+
+.medalla.desbloqueada{
+opacity: 1;
+transform: scale(1);
+background: gold;
+color: black;
+}
+
+.medalla{
+opacity: 0.3;
+transform: scale(0.8);
+transition: 0.5s;
+padding:15px;
+border-radius:15px;
+background:#ddd;
+text-align:center;
+}
+
+/* Medalla desbloqueada */
+.medalla.desbloqueada{
+opacity: 1;
+background: linear-gradient(45deg, gold, orange);
+color:black;
+}
+
+/* Animación */
+@keyframes logroAnimacion{
+
+0%{
+transform: scale(0.5) rotate(-10deg);
+}
+
+50%{
+transform: scale(1.3) rotate(10deg);
+}
+
+100%{
+transform: scale(1);
+}
+
+}
+
+.medalla.animar{
+animation: logroAnimacion 1.2s ease;
+box-shadow: 0 0 20px gold;
+}
+/* CONTENEDOR XP */
+.xp-container{
+margin:30px 0;
+text-align:center;
+}
+
+/* BARRA BASE */
+.barra-xp{
+width:80%;
+height:25px;
+background:#ddd;
+margin:10px auto;
+border-radius:20px;
+overflow:hidden;
+}
+
+/* BARRA PROGRESO */
+#barraXP{
+height:100%;
+width:0%;
+background: linear-gradient(90deg, #00ffcc, #0099ff);
+transition: width 0.6s ease;
+}
+
+@keyframes nivelUp{
+
+0%{ box-shadow:0 0 5px cyan; }
+50%{ box-shadow:0 0 25px cyan; }
+100%{ box-shadow:0 0 5px cyan; }
+
+}
+
+#barraXP.nivel-up{
+animation:nivelUp 1s;
+}
+
+/* ===== COLORES POR MÓDULO ===== */
+
+/* Diseño Web */
+.modulo-dw {
+    border-left: 8px solid #2563eb;
+}
+
+.modulo-dw h2 {
+    color: #2563eb;
+}
+
+/* Soporte Técnico */
+.modulo-st {
+    border-left: 8px solid #16a34a;
+}
+
+.modulo-st h2 {
+    color: #16a34a;
+}
+
+/* Sistemas */
+.modulo-sis {
+    border-left: 8px solid #9333ea;
+}
+
+.modulo-sis h2 {
+    color: #9333ea;
+}
+
+
+
+/* ============================= */
+/* 🎨 MÓDULOS COLORIDOS */
+/* ============================= */
+
+/* ===== DISEÑO WEB ===== */
+.modulo-dw{
+background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+border-left: 10px solid #0284c7;
+}
+
+.modulo-dw h2{ color:#0369a1; }
+
+.modulo-dw .opciones button{
+background:#0284c7;
+}
+.modulo-dw .opciones button:hover{
+background:#0369a1;
+}
+
+/* ===== SOPORTE TÉCNICO ===== */
+.modulo-st{
+background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+border-left: 10px solid #16a34a;
+}
+
+.modulo-st h2{ color:#166534; }
+
+.modulo-st .opciones button{
+background:#16a34a;
+}
+.modulo-st .opciones button:hover{
+background:#166534;
+}
+
+/* ===== SISTEMAS ===== */
+.modulo-sis{
+background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+border-left: 10px solid #9333ea;
+}
+
+.modulo-sis h2{ color:#7e22ce; }
+
+.modulo-sis .opciones button{
+background:#9333ea;
+}
+.modulo-sis .opciones button:hover{
+background:#7e22ce;
+}
+
+
+
+
+/* ============================= */
+/* ✨ ANIMACIÓN ENTRADA MÓDULOS */
+/* ============================= */
+
+@keyframes aparecerModulo {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Animación base */
+section {
+    animation: aparecerModulo 0.8s ease forwards;
+}
+
+
+section:nth-of-type(1){ animation-delay: 0.1s; }
+section:nth-of-type(2){ animation-delay: 0.25s; }
+section:nth-of-type(3){ animation-delay: 0.4s; }
+section:nth-of-type(4){ animation-delay: 0.55s; }
+section:nth-of-type(5){ animation-delay: 0.7s; }
+
+
+section{
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover{
+transform: translateY(-6px) scale(1.02);
+box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
